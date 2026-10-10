@@ -10,19 +10,19 @@
 </head>
 <body>
     
-
-
-  
-
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-2">
-  <div class="container">
+  <div class="container-fluid">
 
-    <a class="navbar-brand fw-bold fs-3 " href="#">
+    <a class="navbar-brand fw-bold" href="#">
       🎮 Game Review
     </a>
-    <div id="navbarNav">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <ul class="navbar-nav gap-3">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-2">
 
         <li class="nav-item">
           <a class="nav-link active" id="MMORBG" href="#">MMORBG</a>
@@ -52,47 +52,26 @@
     </div>
   </div>
 </nav>
- 
-
-
-
 
  <header class="hero">
     <div class="overlay">
         <div class="container text-center text-white">
-
             <h1>LEVEL UP YOUR GAMING</h1>
-
         </div>
     </div>
 </header>
 
-
 <section id="games">
     <div class="container">
-        <div class="row g-4 justify-content-center" id="gameData">
-
-           
-        </div>
+        <div class="row g-4 justify-content-center" id="gameData"></div>
     </div>
 </section>
-
-
-
-
-
 
 <section id="details" class="d-none py-5">
-    <div class="container" id="detailsData">
-
-    </div>
+    <div class="container" id="detailsData"></div>
 </section>
-
-
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
-
-    

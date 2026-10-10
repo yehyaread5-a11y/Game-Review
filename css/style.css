@@ -1,26 +1,20 @@
-
-
 body{
     background-image:
     linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.559)),
     url("../images/dfvkl.jpg");
-    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
     min-height: 100vh;
 }
 
-/************start the navbar*******************************/
 .navbar{
-      background: rgba(16,20,40,.95);
+    background: rgba(16,20,40,.95);
     border-radius: 20px;
     width: 85%;
     margin: 30px auto;
     box-shadow: 0 0 20px rgba(0,0,0,.4);
-    
 }
 
 .navbar-brand{
@@ -55,9 +49,8 @@ body{
 
 .nav-link:hover{
     color:#00e5ff ;
-} 
-/************end the navbar*******************************/
-/************start the hader*******************************/
+}
+
 .hero{
     height: 100vh;
     display: flex;
@@ -77,9 +70,10 @@ body{
     font-size:70px;
     font-weight:800;
     letter-spacing:3px;
-   
+    text-align: center;
+    padding: 20px;
 }
-/************end the hader*******************************/
+
 #games{
     margin-top: -200px;
     position: relative;
@@ -88,7 +82,7 @@ body{
 }
 
 .game-card{
-   background: rgba(28,35,51,.9);
+    background: rgba(28,35,51,.9);
     border: 1px solid rgba(255,255,255,.1);
     border-radius: 15px;
     overflow: hidden;
@@ -105,43 +99,199 @@ body{
     width: 100%;
     height: 200px;
     object-fit: cover;
-
 }
 
 .card-title{
-      font-size: 20px;
+    font-size: 20px;
     font-weight: 700;
     color: #fff;
-
     height: 55px;
-
     display: -webkit-box;
-    
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
 .card-text{
-     color: #9ca3af;
+    color: #9ca3af;
     font-size: 14px;
     line-height: 1.6;
-
     height: 90px;
-
     display: -webkit-box;
-   
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
 .card-body{
-     display: flex;
+    display: flex;
     flex-direction: column;
     padding: 20px;
 }
 
-
 #details{
     min-height: 100vh;
     padding-top: 120px;
-  
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        width: 90%;
+        margin: 15px auto;
+        padding: 10px 15px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem !important;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: 2px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+        padding: 8px 10px !important;
+    }
+
+    #games {
+        margin-top: -150px;
+    }
+
+    .game-card img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 95%;
+        margin: 10px auto;
+        border-radius: 10px;
+        padding: 8px 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem !important;
+        letter-spacing: 0.5px;
+    }
+
+    .nav-link {
+        font-size: 11px;
+        padding: 5px 8px !important;
+    }
+
+    .hero {
+        height: 60vh;
+        min-height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        letter-spacing: 1px;
+        padding: 20px;
+    }
+
+    #games {
+        margin-top: -100px;
+        padding-bottom: 30px;
+    }
+
+    .game-card img {
+        height: 160px;
+    }
+
+    .card-title {
+        font-size: 16px;
+        height: 50px;
+    }
+
+    .card-text {
+        font-size: 12px;
+        height: 80px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    #details {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        width: 98%;
+        margin: 8px auto;
+        padding: 8px;
+    }
+
+    .navbar-brand {
+        font-size: 1rem !important;
+    }
+
+    .nav-link {
+        font-size: 10px;
+        padding: 4px 6px !important;
+    }
+
+    .hero {
+        height: 50vh;
+        min-height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+        letter-spacing: 0px;
+        padding: 15px;
+    }
+
+    #games {
+        margin-top: -80px;
+        padding-bottom: 20px;
+    }
+
+    .game-card {
+        margin-bottom: 15px;
+    }
+
+    .game-card img {
+        height: 150px;
+    }
+
+    .card-title {
+        font-size: 14px;
+        height: 45px;
+    }
+
+    .card-text {
+        font-size: 11px;
+        height: 75px;
+    }
+
+    .card-body {
+        padding: 12px;
+    }
+
+    .badge {
+        font-size: 10px !important;
+        padding: 4px 8px !important;
+    }
+
+    #details {
+        padding-top: 60px;
+    }
+
+    #details h2 {
+        font-size: 20px;
+    }
+
+    #details p {
+        font-size: 13px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 6px 12px !important;
+    }
 }
